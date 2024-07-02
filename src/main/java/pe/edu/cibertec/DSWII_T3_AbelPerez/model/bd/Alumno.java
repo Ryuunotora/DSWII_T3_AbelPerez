@@ -17,6 +17,6 @@ public class Alumno {
     private String nomalumno;
     @ManyToOne
     @JoinColumn(name = "idesp")
-    private Especialidad especialida;
+    private Especialidad especialidad;
     private Character proce;
 }
