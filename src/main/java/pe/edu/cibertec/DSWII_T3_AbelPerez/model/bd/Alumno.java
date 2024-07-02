@@ -12,7 +12,6 @@ import lombok.Setter;
 public class Alumno {
 
     @Id
-    @GeneratedValue(strategy = GenerationType.IDENTITY)
     private String idalumno;
     private String apealumno;
     private String nomalumno;
