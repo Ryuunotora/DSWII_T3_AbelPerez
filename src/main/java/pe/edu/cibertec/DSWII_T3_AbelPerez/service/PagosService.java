@@ -4,6 +4,7 @@ package pe.edu.cibertec.DSWII_T3_AbelPerez.service;
 import lombok.AllArgsConstructor;
 import org.springframework.stereotype.Service;
 import pe.edu.cibertec.DSWII_T3_AbelPerez.model.bd.Pagos;
+import pe.edu.cibertec.DSWII_T3_AbelPerez.model.bd.PagosId;
 import pe.edu.cibertec.DSWII_T3_AbelPerez.repository.PagosRepository;
 
 import java.util.List;
@@ -25,8 +26,9 @@ public class PagosService implements IPagosService{
         return pagosRepository.save(pagos);
     }
 
+
     @Override
-    public Optional<Pagos> obtenerPagosxId(String id) {
+    public Optional<Pagos> obtenerPagosxId(PagosId id) {
         Optional<Pagos> pagos
                 = pagosRepository.findById(id);
         if(pagos.isEmpty()){
