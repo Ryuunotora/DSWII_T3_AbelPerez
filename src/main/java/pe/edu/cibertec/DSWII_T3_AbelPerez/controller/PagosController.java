@@ -20,6 +20,7 @@ public class PagosController {
 
     private PagosService pagosService;
 
+
     @GetMapping("")
     public ResponseEntity<List<Pagos>> listarPagos(){
         List<Pagos> pagosList =
