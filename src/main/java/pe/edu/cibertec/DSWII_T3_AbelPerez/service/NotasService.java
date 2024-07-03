@@ -4,6 +4,7 @@ package pe.edu.cibertec.DSWII_T3_AbelPerez.service;
 import lombok.AllArgsConstructor;
 import org.springframework.stereotype.Service;
 import pe.edu.cibertec.DSWII_T3_AbelPerez.model.bd.Notas;
+import pe.edu.cibertec.DSWII_T3_AbelPerez.model.bd.NotasId;
 import pe.edu.cibertec.DSWII_T3_AbelPerez.repository.NotasRepository;
 
 import java.util.List;
@@ -26,7 +27,7 @@ public class NotasService implements  INotasService{
     }
 
     @Override
-    public Optional<Notas> obtenerNotasxId(String id) {
+    public Optional<Notas> obtenerNotasxId(NotasId id) {
         Optional<Notas> notas
                 = notasRepository.findById(id);
         if(notas.isEmpty()){

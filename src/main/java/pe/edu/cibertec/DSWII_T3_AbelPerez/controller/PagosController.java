@@ -39,8 +39,8 @@ public class PagosController {
         PagosId id = new PagosId(idalumno,ciclo,ncuota);
         Pagos pagos = pagosService
                 .obtenerPagosxId(id).orElseThrow(
-                        () -> new ResourceNotFoundException("El Pago con Id " +
-                                id + " no existe"));
+                        () -> new ResourceNotFoundException("El Pago con Id Alumno" +
+                                idalumno + " cilo " + ciclo + " y Numero de cuota" + ncuota + " no existen"));
         return new ResponseEntity<>(pagos, HttpStatus.OK);
     }
 
@@ -65,8 +65,8 @@ public class PagosController {
     ){
         PagosId id = new PagosId(idalumno,ciclo,ncuota);
         Pagos newPago = pagosService.obtenerPagosxId(id)
-                .orElseThrow(() -> new ResourceNotFoundException("El Pago con Id "
-                        + id +" no existe"));
+                .orElseThrow(() -> new ResourceNotFoundException("El Pago con Id Alumno" +
+                        idalumno + " cilo " + ciclo + " y Numero de cuota" + ncuota + " no existen"));
         newPago.setAlumno(pagos.getAlumno());
         newPago.setMonto(pagos.getMonto());
         newPago.setFecha(pagos.getFecha());
