@@ -1,7 +1,7 @@
 package pe.edu.cibertec.DSWII_T3_AbelPerez.service;
 
 import pe.edu.cibertec.DSWII_T3_AbelPerez.model.bd.Pagos;
-import pe.edu.cibertec.DSWII_T3_AbelPerez.model.bd.PagosId;
+import pe.edu.cibertec.DSWII_T3_AbelPerez.model.bd.pk.PagosId;
 
 import java.util.List;
 import java.util.Optional;

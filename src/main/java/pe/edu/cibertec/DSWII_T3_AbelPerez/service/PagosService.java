@@ -4,7 +4,7 @@ package pe.edu.cibertec.DSWII_T3_AbelPerez.service;
 import lombok.AllArgsConstructor;
 import org.springframework.stereotype.Service;
 import pe.edu.cibertec.DSWII_T3_AbelPerez.model.bd.Pagos;
-import pe.edu.cibertec.DSWII_T3_AbelPerez.model.bd.PagosId;
+import pe.edu.cibertec.DSWII_T3_AbelPerez.model.bd.pk.PagosId;
 import pe.edu.cibertec.DSWII_T3_AbelPerez.repository.PagosRepository;
 
 import java.util.List;

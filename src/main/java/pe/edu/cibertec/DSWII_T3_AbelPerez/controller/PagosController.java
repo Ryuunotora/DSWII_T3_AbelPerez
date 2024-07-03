@@ -7,7 +7,7 @@ import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
 import pe.edu.cibertec.DSWII_T3_AbelPerez.exception.ResourceNotFoundException;
 import pe.edu.cibertec.DSWII_T3_AbelPerez.model.bd.Pagos;
-import pe.edu.cibertec.DSWII_T3_AbelPerez.model.bd.PagosId;
+import pe.edu.cibertec.DSWII_T3_AbelPerez.model.bd.pk.PagosId;
 import pe.edu.cibertec.DSWII_T3_AbelPerez.service.PagosService;
 
 import java.util.ArrayList;

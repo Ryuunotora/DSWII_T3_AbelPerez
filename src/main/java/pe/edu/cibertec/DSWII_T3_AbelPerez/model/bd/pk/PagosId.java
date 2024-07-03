@@ -1,4 +1,4 @@
-package pe.edu.cibertec.DSWII_T3_AbelPerez.model.bd;
+package pe.edu.cibertec.DSWII_T3_AbelPerez.model.bd.pk;
 
 import jakarta.persistence.Embeddable;
 import lombok.Getter;

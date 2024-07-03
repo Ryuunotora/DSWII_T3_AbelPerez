@@ -3,6 +3,7 @@ package pe.edu.cibertec.DSWII_T3_AbelPerez.model.bd;
 import jakarta.persistence.*;
 import lombok.Getter;
 import lombok.Setter;
+import pe.edu.cibertec.DSWII_T3_AbelPerez.model.bd.pk.NotasId;
 
 @Getter
 @Setter
